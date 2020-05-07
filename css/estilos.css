@@ -13,4 +13,9 @@
   color: white;
   background-color: cornflowerblue;
   padding: 15px;
+  cursor: pointer;
+}
+.cuadrado:hover {
+    background-color: red;
+  
 }
