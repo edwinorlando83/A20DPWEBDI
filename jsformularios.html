@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>javascript</title>
+  </head>
+
+  <body>
+    <form id="frmdatos">
+      <p>#1: <input id="txtNumero1" type="text"  size="40" /></p>
+      <p>#2: <input id="txtNumero2" type="text"   size="40" /></p>  
+      
+      <p> Resultado : <input id="resultado" readonly />   </p>   
+      <input type="button" onclick="suma()" value="suma"> </input>
+    </form>
+    <script>
+
+        function suma(){           
+            var n1 =  document.getElementById('txtNumero1').value ;  
+            var n2 =  document.getElementById('txtNumero2').value ; 
+            var resultado =  document.getElementById('resultado')  ;   
+            resultado.value = n1  + n2;
+        }
+    </script>
+  </body>
+</html>

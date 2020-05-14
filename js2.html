@@ -7,11 +7,17 @@
 </head>
 
 <body>
+
+ 
     <div style="color: chartreuse; font-size: 32px;"> Titulo </div>
-    <label id="label1"> Nombre </label> <input id="txtNombre" type="text"> </input>
-    <input type="button" onclick="ejemplo_promt()" value="Click"> </input>
+   
+  
     <input type="button" onclick="ejemplo_promt2()" value="Sumar "> </input>
+    
     <input type="button" onclick="condicionif()" value="Condición IF "> </input>
+
+    <input type="button" onclick="resta()" value="Resta "> </input>
+
     <!-- comentario  -->
     <script>
         // variable nombre
@@ -43,6 +49,12 @@
             var n1 = prompt('#1');
             var n2 = prompt('#2');
             var suma = parseInt(n1) + parseInt(n2);
+            alert(suma);
+        }
+        function resta() {
+            var n1 = prompt('#1');
+            var n2 = prompt('#2');
+            var suma = parseInt(n1) -  parseInt(n2);
             alert(suma);
         }
         function condicionif() {
