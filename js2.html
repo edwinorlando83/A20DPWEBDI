@@ -9,7 +9,8 @@
 <body>
     <div style="color: chartreuse; font-size: 32px;"> Titulo </div>
     <label id="label1"> Nombre </label> <input id="txtNombre" type="text"> </input>
-    <input type="button" onclick="evento()" value="Click"> </input>
+    <input type="button" onclick="ejemplo_promt()" value="Click"> </input>
+    <input type="button" onclick="ejemplo_promt2()" value="Sumar "> </input>
     <!-- comentario  -->
     <script>
         // variable nombre
@@ -18,8 +19,12 @@
         var numero = 3.4;
         var sueldo = 450;
 
+        var numero1 = 5;
+        var numero2 = 6;
+
         function evento() {
-            alert('holaa');
+            var resultado = (numero1 * numero2) + 100 - (numero2 * 3);
+            alert(resultado);
             // ** orlando **
             /*
             comentario de multiples lineas.
@@ -28,6 +33,18 @@
         /*  function evento2() {
             console.log('hola');
         } */
+
+
+        function ejemplo_promt() {
+            var nombreingresaso = prompt('Su nombre');
+            alert(nombreingresaso);
+        }
+        function ejemplo_promt2() {
+            var n1 = prompt('#1');
+            var n2 = prompt('#2');
+            var suma = n1+n2;
+            alert(suma);
+        }
     </script>
 
 </body>
