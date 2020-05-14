@@ -11,6 +11,7 @@
     <label id="label1"> Nombre </label> <input id="txtNombre" type="text"> </input>
     <input type="button" onclick="ejemplo_promt()" value="Click"> </input>
     <input type="button" onclick="ejemplo_promt2()" value="Sumar "> </input>
+    <input type="button" onclick="condicionif()" value="Condición IF "> </input>
     <!-- comentario  -->
     <script>
         // variable nombre
@@ -33,17 +34,26 @@
         /*  function evento2() {
             console.log('hola');
         } */
-
-
         function ejemplo_promt() {
-            var nombreingresaso = prompt('Su nombre');
-            alert(nombreingresaso);
+            var nombreingresado = prompt('Su nombre');
+            alert(nombreingresado);
         }
+
         function ejemplo_promt2() {
             var n1 = prompt('#1');
             var n2 = prompt('#2');
-            var suma = n1+n2;
+            var suma = parseInt(n1) + parseInt(n2);
             alert(suma);
+        }
+        function condicionif() {
+            var nombreingresado = prompt('Su nombre');
+
+            if (nombreingresado == 'Orlando') {
+                alert(' hola');
+            }
+            else {
+                alert('Usted no es Orlando');
+            }
         }
     </script>
 
