@@ -19,3 +19,11 @@
     background-color: red;
   
 }
+.negativo{
+  color: red;
+  font-size: 20px;
+}
+.positivo {
+  color: green;
+  font-size: 20px;
+}

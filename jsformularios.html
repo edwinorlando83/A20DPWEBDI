@@ -1,25 +1,39 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>javascript</title>
-  </head>
 
-  <body>
-    <form id="frmdatos">
-      <p>#1: <input id="txtNumero1" type="text"  size="40" /></p>
-      <p>#2: <input id="txtNumero2" type="text"   size="40" /></p>  
-      
-      <p> Resultado : <input id="resultado" readonly />   </p>   
-      <input type="button" onclick="suma()" value="suma"> </input>
-    </form>
-    <script>
+<head>
+  <meta charset="utf-8" />
+  <title>javascript</title>
+  <link rel="stylesheet" href="css/estilos.css" />
 
-        function suma(){           
-            var n1 =  document.getElementById('txtNumero1').value ;  
-            var n2 =  document.getElementById('txtNumero2').value ; 
-            var resultado =  document.getElementById('resultado')  ;   
-            resultado.value = n1  + n2;
-        }
-    </script>
-  </body>
+</head>
+
+<body>
+  <form id="frmdatos">
+    <p>#1: <input id="txtNumero1" type="text" size="40" /></p>
+    <p>#2: <input id="txtNumero2" type="text" size="40" /></p>
+    <p>#3: <input id="txtNumero3" type="text" size="40" /></p>
+    <p id="presultado" > Resultado :      <input id="resultado" readonly /> </p>
+    <input style="border-radius: 3px;font-size: 25px;" type="button" onclick="suma()" value="suma"> </input>
+  </form>
+  <script>
+    function suma() {
+      var n1 = document.getElementById('txtNumero1').value;
+      var n2 = document.getElementById('txtNumero2').value;
+      var n3 = document.getElementById('txtNumero3').value;
+      var resultado = document.getElementById('resultado');
+      resultado.value = parseInt(n1) + parseInt(n2) + parseInt(n3);
+        
+      if (resultado.value > 0) {
+        document.getElementById("resultado").className ="positivo";
+        document.getElementById("presultado").className ="positivo";
+        console.log('Es positivo');
+      }
+      else {
+        document.getElementById("resultado").className ="negativo";
+        document.getElementById("presultado").className ="negativo";
+      }
+    }
+  </script>
+</body>
+
 </html>
